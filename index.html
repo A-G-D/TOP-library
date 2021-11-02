@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3db5853184.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+    <title>Book Library</title>
+</head>
+<body>
+    <div class="header-section hflex">
+        <div class="hflex">
+            <h1>Book Library</h1>
+        </div>
+        <div class="hflex reversed">
+            <!--  -->
+        </div>
+    </div>
+    <div class="main-section hflex">
+        <button id="btn-add-book" class="item vflex"><i class="fas fa-plus-square fa-5x"></i></button>
+        <!-- Books display here -->
+    </div>
+    <div class="footer-section vflex">
+        <div>
+            <span>Book samples taken from <a href="https://openlib.org">OpenLib.org</a></span>
+        </div>
+        <div>
+            <span>Icons made by <a href="https://www.flaticon.com/authors/wanicon" title="wanicon">wanicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modalbox vflex">
+            <div class="header hflex">
+                <h3 class="title">Add New Book</h3>
+            </div>
+            <div class="body hflex">
+                <div class="left vflex">
+                    <label>Book Title</label>
+                    <label>Author</label>
+                    <label>Cover Image</label>
+                    <label>File/Url</label>
+                </div>
+                <div class="right vflex">
+                    <input class="title" type="text">
+                    <input class="author" type="text">
+                    <input class="cover-image" type="text">
+                    <input class="file" type="text">
+                </div>
+            </div>
+            <div class="footer hflex">
+                <button id="btn-submit-book">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
